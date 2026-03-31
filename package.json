@@ -1,6 +1,16 @@
 {
+  "name": "miles-josephson-personal",
+  "version": "1.0.0",
   "scripts": {
+    "start": "node server.js",
     "test": "jest --coverage"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
   },
   "jest": {
     "coverageThreshold": {

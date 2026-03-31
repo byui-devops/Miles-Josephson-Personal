@@ -4,15 +4,15 @@ on:
   workflow_dispatch:
     inputs:
       aws_access_key_id:
-        description: 'AWS Access Key ID (from AWS Academy lab)'
+        description: 'AWS Access Key ID (ASIAXXFSYSEESDFFABDT)'
         required: true
         type: string
       aws_secret_access_key:
-        description: 'AWS Secret Access Key (from AWS Academy lab)'
+        description: 'AWS Secret Access Key (mx3nIkt+VvQngB9PYTifmNkGk2N6rgX104mPjpFK)'
         required: true
         type: string
       aws_session_token:
-        description: 'AWS Session Token (from AWS Academy lab)'
+        description: 'AWS Session Token (IQoJb3JpZ2luX2VjEGcaCXVzLXdlc3QtMiJGMEQCIC9K36MVPA/eGdJptY8f9+pb3bSWbT9QHYolola9TlMMAiBej/yzx+uiT+m1TrAJyLCMV3LAtdTT6vME5SVz9M85/yqqAggvEAIaDDUzMDgwMzM2NDEwNSIMxLBJP3SpVCuONpJGKocCQSwR9B/X1GEC9xrOcNZ1tdHgAuEsxU1u27k6Wfz6MhkvtZ4oy/eteKbtJ2Ui+JSvhvDG6bT6C4+OnaF1ocVX6MyJ2id/Ug0/ZQGGfS9pmYSAQMpDWzyoGpYZ6WTggMAYIFnh2SdQQaJbjEOWO40J6UavorLkXw1r57OTDx4CR5NAFBf64dGQJUhvy57wFiH3TbV7aZ8Mdoe9Fqv/c3f3FduypGF2cfBFKj38yk+RmBU79jsU4Fag0Ysv4+zKKcIf0OIXIGtzRm/I5cIvcE+Dd8AKVi1NUTxzLxocgsEzd1OtRcnW0pFAVgSgkKNvKzxpLVT3NN/FpdqQmNB1VEOOJTHHQkMEFSUwh+6rzgY6ngHlbaT2xklk1OPVZ40Yb7L8MgYG3LXBAlGR9nyrVnEUG/2qz6K1Dt6YN/zCWX0OkDwBa0E5UR7ntphZ5tVJy199eFFJjHjAkuALSiSyFEw0NpZNLy+eS8WuUpUfWkEDsakBy6ugJ1uw8oxyY0vB03gbRY5ohQfD6YucLNt72BF1wKHUEYbnea9btMm7xgjGo86CFbkIO4BgNQMzKZamig==)'
         required: true
         type: string
       aws_region:
