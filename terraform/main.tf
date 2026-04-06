@@ -111,7 +111,7 @@ resource "aws_security_group" "rds_sg" {
 resource "aws_db_instance" "postgres" {
   identifier        = "jdm-legacy-db"
   engine            = "postgres"
-  engine_version    = "16.3"
+  engine_version    = "16"
   instance_class    = "db.t3.micro"
   allocated_storage = 20
   storage_type      = "gp2"
