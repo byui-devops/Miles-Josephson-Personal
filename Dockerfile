@@ -1,13 +1,19 @@
-FROM node:20-alpine
+FROM python:3.12-slim
+
+LABEL maintainer="Miles <your@email.com>"
+LABEL description="JDM Legacy — Japanese Car Catalog"
 
 WORKDIR /app
 
-COPY package*.json ./
+# Install dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-RUN npm install --omit=dev
-
+# Copy source
 COPY . .
 
-EXPOSE 8080
+# Expose port
+EXPOSE 5000
 
-CMD ["node", "server.js"]
+# Run with gunicorn (production-grade WSGI server)
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "2", "--timeout", "60", "run:app"]
