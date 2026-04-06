@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JDM Legacy — Japanese Automotive History</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@300;400;700&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/static/css/style.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-jp">日本車</span>
+        <span class="logo-en">JDM LEGACY</span>
+      </div>
+      <nav class="era-nav">
+        <button class="era-btn active" data-era="all">ALL</button>
+        <button class="era-btn" data-era="past">PAST</button>
+        <button class="era-btn" data-era="present">PRESENT</button>
+        <button class="era-btn" data-era="future">FUTURE</button>
+      </nav>
+      <div class="forza-toggle">
+        <label class="toggle-label">
+          <input type="checkbox" id="forzaToggle"/>
+          <span class="toggle-track"></span>
+          <span class="toggle-text">FH6 Only</span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-sub">From Showa classics to concepts not yet born</p>
+      <h1 class="hero-title">THE SOUL OF<br/><em>JAPANESE</em><br/>PERFORMANCE</h1>
+      <div class="hero-line"></div>
+      <p class="hero-desc">Explore the machines that defined generations — past legends, present icons, and the future of JDM.</p>
+    </div>
+    <div class="hero-counter">
+      <div class="counter-item"><span id="countPast">0</span><label>LEGENDS</label></div>
+      <div class="counter-item"><span id="countPresent">0</span><label>ICONS</label></div>
+      <div class="counter-item"><span id="countFuture">0</span><label>VISIONS</label></div>
+    </div>
+  </section>
+
+  <!-- Era label -->
+  <div class="section-label">
+    <span id="eraLabel">ALL ERAS</span>
+    <span class="car-count" id="carCount"></span>
+  </div>
+
+  <!-- Grid -->
+  <main class="car-grid" id="carGrid">
+    <div class="loading-state">
+      <div class="spinner"></div>
+      <p>Loading vehicles…</p>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-era-badge" id="modalEra"></div>
+      <div class="modal-image-wrap">
+        <img class="modal-image" id="modalImage" src="" alt=""/>
+        <div class="modal-image-overlay"></div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-make" id="modalMake"></div>
+        <h2 class="modal-model" id="modalModel"></h2>
+        <div class="modal-meta">
+          <span class="meta-item"><span class="meta-label">YEAR</span><span class="meta-val" id="modalYear"></span></span>
+          <span class="meta-item"><span class="meta-label">POWER</span><span class="meta-val" id="modalHP"></span></span>
+          <span class="meta-item" id="modalForzaWrap"><span class="meta-label">FORZA HZ6</span><span class="meta-val forza-yes">✓ AVAILABLE</span></span>
+        </div>
+        <p class="modal-desc" id="modalDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <span>JDM Legacy &mdash; Built for ITM 300 &bull; Miles &bull; Idaho Falls</span>
+    <span class="footer-jp">日本車の魂</span>
+  </footer>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
